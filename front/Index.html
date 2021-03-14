@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="Index.css">
+</head>
+
+<body>
+    <div id="dropTarget">
+        <p>文 件 读 取</p>
+    </div>
+    <div id="Animation">
+        <div id="server"></div>
+        <div id="client"></div>
+        <div id="pathArea">
+            <!-- 下面是连接动画展示 -->
+            <ul class="list">
+                <li class="pathFlag" id="hi1">SYN</li>
+                <li><svg class="pathCross">
+                        <polyline class="cross" id="path1" points="10,10,250,10,240,0,250,10,240,20" />
+                    </svg>
+                </li>
+                <li class="pathFlag" id="hi2">SYN,ACK</li>
+                <li><svg class="pathCross">
+                        <polyline class="cross" id="path2" points="250,10,10,10,20,0,10,10,20,20" />
+                    </svg></li>
+                <li class="pathFlag" id="hi3">ACK</li>
+                <li><svg class="pathCross">
+                        <polyline class="cross" id="path3" points="10,10,250,10,240,0,250,10,240,20" />
+                    </svg></li>
+                <li class="pathFlag" id="bye1">FIN,ACK</li>
+                <li><svg class="pathCross">
+                        <polyline id="path4" class="cross" points="10,10,250,10,240,0,250,10,240,20" />
+                    </svg>
+                </li>
+                <li class="pathFlag" id="bye2">ACK</li>
+                <li><svg class="pathCross">
+                        <polyline class="cross" id="path5" points="250,10,10,10,20,0,10,10,20,20" />
+                    </svg></li>
+                <li class="pathFlag" id="bye3">FIN,ACK</li>
+                <li><svg class="pathCross">
+                        <polyline class="cross" id="path6" points="250,10,10,10,20,0,10,10,20,20" />
+                    </svg></li>
+                <li class="pathFlag" id="bye4">ACK</li>
+                <li><svg class="pathCross">
+                        <polyline id="path7" class="cross" points="10,10,250,10,240,0,250,10,240,20" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 数据包选择下拉菜单 -->
+    <div id="header">
+        <span>总共有</span><span id="optionsLength">0</span><span>个数据包 &nbsp</span>
+        <select id="packSelect" onchange="dataShow(this.value)">
+        </select>
+        <button id="dataHandle" onclick="sepProcess(window.info)">数据分析</button>
+        <button id="animation" onclick="animationTimeLine()">动画展示</button>
+    </div>
+    <div id="macDiv">
+        <span>目的MAC地址：</span><span id="DstMac">1.1.0.1</span><br>
+        <span>源MAC地址：</span><span id="SrcMac">1.1.1.1</span>
+        <div id="ipDiv">
+            <span>目的IP地址：</span><span id="DstIp">192.168.0.1</span><br>
+            <span>源IP地址：</span><span id="SrcIp">192.168.1.1</span><br>
+            <span>协议：</span><span id="Ipv">IPV4</span>
+            <div id="tcpDiv">
+                <span>目的端口号：</span><span id="DstPort">80</span><br>
+                <span>源端口号：</span><span id="SrcPort">8080</span><br>
+                <span>协议：</span><span id="Protocol">TCP</span><span>&nbsp &nbsp标志位：</span>
+                <span id="Flag">ACK</span>
+                <div id="dataDiv">
+                    <span>数据内容：</span><span id="Data">Hello,World!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="DataShow.js"></script>
+<script src="FileReader.js"></script>
+<script src="../TweenMax.min.js"></script>
+<script src="../DrawSVGPlugin.min.js"></script>
+<script src="DataAnalysis.js"></script>
+
+</html>
