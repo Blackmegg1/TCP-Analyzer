@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <svg width="100%" height="100%">
+        <line id="path" x1="100" y1="100" x2="300" y2="100" style="fill:none;stroke:red;stroke-width:5" />
+    </svg> -->
+    <svg width="100%" height="100%">
+        <polyline id="path" points="100,100,300,100,280,90,300,100,280,110" style="fill:none;stroke:red;stroke-width:2" />
+    </svg>
+    <!-- polyline的参数为（x,y）的集合，不过要注意外边svg容器的大小 -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="../DrawSVGPlugin.min.js"></script>
+<script src="learn.js"></script>
+</html>

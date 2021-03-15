@@ -1,0 +1,132 @@
+/* #output {
+    width: 1200px;
+    height: 3000px;
+    font-size: medium;
+} */
+
+#dropTarget {
+    float: left;
+    height: 100px;
+    width: 1006px;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+}
+
+#Animation {
+    float: right;
+    height: 750px;
+    width: 850px;
+    background-color: rgb(0, 0, 0);
+}
+
+#server {
+    position: absolute;
+    top: 3%;
+    margin-left: 1%;
+    height: 640px;
+    width: 200px;
+    background-color: blue;
+}
+
+#client {
+    position: absolute;
+    top: 3%;
+    right: 1%;
+    height: 640px;
+    width: 200px;
+    background-color: rgb(255, 17, 0);
+}
+
+.list li {
+    list-style-type: none;
+    text-align: center;
+}
+
+#pathArea {
+    position: absolute;
+    top: 5%;
+    right: 12%;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    white-space: normal;
+
+}
+
+.pathFlag {
+    visibility: hidden;
+    font-size: smaller;
+}
+
+.pathCross {
+    width: 300px;
+    height: 30px;
+}
+
+.cross {
+    fill: none;
+    stroke: red;
+    stroke-width: 3;
+    visibility: hidden;
+}
+
+#macDiv {
+    float: left;
+    height: 600px;
+    width: 1000px;
+    background-color: cadetblue;
+    border: 2px solid black;
+}
+
+#ipDiv {
+    height: 500px;
+    width: 900px;
+    background-color: antiquewhite;
+    border: 1.5px solid black;
+}
+
+#tcpDiv {
+    height: 400px;
+    width: 800px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+#dataDiv {
+    height: 250px;
+    width: 680px;
+    background-color: rgb(162, 196, 192);
+    border: 0.8px solid black;
+    overflow-y: auto;
+}
+
+#Data {
+    height: 246px;
+    width: 490px;
+    /*  overflow-wrap用于span内容自动换行 */
+    overflow-wrap: break-word;
+}
+
+#packSelect {
+    font-size: medium;
+}
+
+#header {
+    width: 800px;
+    margin: 0%;
+}
+
+#dataHandle {
+    font-size: small;
+    margin-left: 15px;
+}
+
+#animation {
+    font-size: small;
+    margin-left: 15px;
+}
