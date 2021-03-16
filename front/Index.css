@@ -4,22 +4,29 @@
     font-size: medium;
 } */
 
+body {
+    background-color: #F2F3F7;
+}
+
 #dropTarget {
     float: left;
     height: 100px;
     width: 1006px;
-    background-color: coral;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #75b0dd 100%);    
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1px;
+    margin: 3px;
+    border: 1px solid gainsboro;
+    font-size: larger;
+    border-radius: 8px;
 }
 
 #Animation {
     float: right;
     height: 750px;
     width: 850px;
-    background-color: rgb(0, 0, 0);
 }
 
 #server {
@@ -28,8 +35,10 @@
     margin-left: 1%;
     height: 640px;
     width: 200px;
-    background-color: blue;
+    display: flex;
+    justify-content: center;
 }
+
 
 #client {
     position: absolute;
@@ -37,7 +46,8 @@
     right: 1%;
     height: 640px;
     width: 200px;
-    background-color: rgb(255, 17, 0);
+    display: flex;
+    justify-content: center;
 }
 
 .list li {
@@ -51,7 +61,6 @@
     right: 12%;
     width: 400px;
     height: 600px;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     white-space: normal;
@@ -78,31 +87,36 @@
 #macDiv {
     float: left;
     height: 600px;
-    width: 1000px;
-    background-color: cadetblue;
-    border: 2px solid black;
+    width: 1006px;
+    background-color: #3cb0fd;
+    border: 2px solid gainsboro;
+    border-radius: 12px;
 }
 
 #ipDiv {
     height: 500px;
     width: 900px;
-    background-color: antiquewhite;
-    border: 1.5px solid black;
+    background-color: #6cc2fc;
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 #tcpDiv {
     height: 400px;
     width: 800px;
-    background-color: aquamarine;
-    border: 1px solid black;
+    background-color: #a9ddff;
+    border-radius: 8px;
+    margin-left: 20px;
+
 }
 
 #dataDiv {
     height: 250px;
     width: 680px;
-    background-color: rgb(162, 196, 192);
-    border: 0.8px solid black;
+    background-color: #ceecff;
     overflow-y: auto;
+    border-radius: 8px;
+    margin-left: 20px;
 }
 
 #Data {
@@ -118,15 +132,22 @@
 
 #header {
     width: 800px;
-    margin: 0%;
+    margin: 5px;
+    margin-left: 10px;
 }
 
 #dataHandle {
     font-size: small;
     margin-left: 15px;
+    background-color: #cedbfd;
+    border: 0ch;
+    border-radius: 8px;
 }
 
 #animation {
     font-size: small;
     margin-left: 15px;
+    background-color: #cedbfd;
+    border: 0ch;
+    border-radius: 8px;
 }

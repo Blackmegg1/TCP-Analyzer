@@ -9,12 +9,16 @@
 </head>
 
 <body>
-    <div id="dropTarget">
+    <div id="dropTarget" title="拖动文件到这里">
         <p>文 件 读 取</p>
     </div>
     <div id="Animation">
-        <div id="server"></div>
-        <div id="client"></div>
+        <div id="server">
+            <img id='serverComputer' src="../tmp/computer.png">
+        </div>
+        <div id="client">
+            <img id='clientComputer' src="../tmp/computer.png">
+        </div>
         <div id="pathArea">
             <!-- 下面是连接动画展示 -->
             <ul class="list">
@@ -61,8 +65,8 @@
         <button id="animation" onclick="animationTimeLine()">动画展示</button>
     </div>
     <div id="macDiv">
-        <span>目的MAC地址：</span><span id="DstMac">1.1.0.1</span><br>
-        <span>源MAC地址：</span><span id="SrcMac">1.1.1.1</span>
+        <span>&nbsp目的MAC地址：</span><span id="DstMac">1.1.0.1</span><br>
+        <span>&nbsp源MAC地址：</span><span id="SrcMac">1.1.1.1</span>
         <div id="ipDiv">
             <span>目的IP地址：</span><span id="DstIp">192.168.0.1</span><br>
             <span>源IP地址：</span><span id="SrcIp">192.168.1.1</span><br>
