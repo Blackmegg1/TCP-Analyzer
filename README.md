@@ -9,7 +9,7 @@ Read the .txt files saved by the wireshake and dynamically display the tcp creat
 
 **Why is its code so bad?**
 
-Because i am so bad.🤧And because I tried to use native js and html without any frames.
+Because i am so bad.🤧And because I tried to use plain js and html without any frames.
 
 **Will it be updated?**
 
