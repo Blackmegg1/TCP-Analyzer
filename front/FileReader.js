@@ -43,9 +43,6 @@ function handleInfo(info) { //处理文件内容，分割成独立的数据包�
             tcpArray.push(arrayOfStrings[i]);
         }
     }
-    // for (const v of tcpArray) {
-    //     console.log(v);
-    // }
     var packArray = new Array(); //包含每个数据包对象的数组
     for (let i = 0; i < tcpArray.length; i++) {
         packArray[i] = JSON.parse(JSON.stringify(handleDataPack(tcpArray[i])));

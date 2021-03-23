@@ -27,7 +27,7 @@ function sepProcess(arr) { //用于分离握手和挥手过程的数据包,并�
     bye3.innerHTML="第三次挥手  "+flagHandle(processArr[4].Flags)+"   "+processArr[4].SeqNum+"   "+processArr[4].AckNum;
     bye4.innerHTML="第四次挥手  "+flagHandle(processArr[5].Flags)+"   "+processArr[5].SeqNum+"   "+processArr[5].AckNum;
 }
-
+    
 const animationTimeLine = () => { //连接动画启动函数
     const tl = new TimelineMax();
     tl
